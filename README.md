@@ -1,3 +1,4 @@
+
 <h1 align="center">Hi 👋, I'm Nikesh</h1>
 <h3 align="center">In the process of leveling up⬆️</h3>
 
@@ -5,7 +6,7 @@
 
 - ⚡ Fun fact **Love watching (StarTalk 🌌 by Neil deGrasse Tyson), (Travel Vlogs , Food Vlogs)**
 
-<h3 align="left">Connect with me:</h3>
+
 <p align="left">
 </p>
 
