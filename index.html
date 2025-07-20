@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikesh Bhattarai - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NB</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Nikesh Bhattarai</h1>
+                <p class="hero-subtitle">In the process of leveling up 🚀</p>
+        
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="profile.png" alt="Nikesh Bhattarai" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Born in Nepal with a flair for adventure, hustled in the vibrant professional landscape of London, and currently decoding Artificial Intelligence in Austria — I'm a professional driven by insatiable curiosity, always seeking to understand not just how things work, but precisely why they sometimes fall short.</p>
+                    <p>I'm currently shaping my future in AI, fully engaged in my Master's studies at Johannes Kepler Universität. My journey, rich with diverse experiences across various roles and geographies, has consistently reinforced my core strengths: a rapid ability to learn, adapt, and a relentless drive to solve complex problems and deliver tangible impact.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>4+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Certifications</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-container">
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="experience-item" data-year="2024">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2024</div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="card-header" onclick="toggleExperience(this)">
+                                <div class="header-content">
+                                    <h3>Home Tuition</h3>
+                                    <div class="header-meta">
+                                        <span class="company">Private Tutoring</span>
+                                        <span class="duration">Aug 2024 - Nov 2024</span>
+                                        <span class="location">Biratchowk, Nepal</span>
+                                    </div>
+                                </div>
+                                <div class="expand-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>In my role as a Private Tutor, I provided one-on-one Mathematics and Science instruction to high-school students. I innovatively integrated modern AI tools (ChatGPT, Gemini, Claude) to significantly enhance self-learning, research, and study techniques, resulting in noticeable improvements in student understanding and academic results. I also fostered digital confidence by simplifying complex tech concepts and promoting the responsible and ethical use of AI in education.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2023">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2023</div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="card-header" onclick="toggleExperience(this)">
+                                <div class="header-content">
+                                    <h3>Customer Service (Retail)</h3>
+                                    <div class="header-meta">
+                                        <span class="company">Entain</span>
+                                        <span class="duration">Jun 2023 - Aug 2024</span>
+                                        <span class="location">London, England</span>
+                                    </div>
+                                </div>
+                                <div class="expand-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>At Entain, I delivered exceptional customer service in a dynamic retail environment, adeptly managing precise financial transactions and cash handling. I consistently resolved customer concerns through empathetic communication and strong problem-solving, while also expertly showcasing betting terminals and gaming machines and prioritizing responsible gaming practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2023">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="card-header" onclick="toggleExperience(this)">
+                                <div class="header-content">
+                                    <h3>Cloud Support Engineer</h3>
+                                    <div class="header-meta">
+                                        <span class="company">Genese Solution</span>
+                                        <span class="duration">Jan 2023 - Apr 2023</span>
+                                        <span class="location">Plymouth, England</span>
+                                    </div>
+                                </div>
+                                <div class="expand-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>As a Cloud Support Engineer at Genese Solution, I collaborated effectively with senior engineers to troubleshoot diverse Linux server systems. I actively engaged in training and certification programs to enhance my AWS knowledge and consistently demonstrated strong communication skills in documenting technical procedures.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2022">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2022</div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="card-header" onclick="toggleExperience(this)">
+                                <div class="header-content">
+                                    <h3>Barista</h3>
+                                    <div class="header-meta">
+                                        <span class="company">EL&N London</span>
+                                        <span class="duration">Oct 2022 - Jun 2023</span>
+                                        <span class="location">London, England</span>
+                                    </div>
+                                </div>
+                                <div class="expand-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>As a Barista at EL&N London, I was instrumental in delivering smooth service to over 600 customers daily, contributing to a 96% customer satisfaction rate. I consistently upheld rigorous company standards for safety and cleanliness across the bar and work area, and rapidly adapted to the demands of a fast-paced environment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2021">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2021</div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="card-header" onclick="toggleExperience(this)">
+                                <div class="header-content">
+                                    <h3>Front Of House</h3>
+                                    <div class="header-meta">
+                                        <span class="company">Nando's UK & IRE</span>
+                                        <span class="duration">Aug 2021 - Oct 2022</span>
+                                        <span class="location">South Ruislip, England</span>
+                                    </div>
+                                </div>
+                                <div class="expand-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>As a Front Of House team member at Nando's UK & IRE, I consistently delivered excellent customer service, effectively greeting guests and efficiently taking orders. I actively upsold menu items and promoted specials, contributing to revenue growth, and consistently thrived in high-pressure environments, demonstrating strong adaptability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="education-timeline">
+                <div class="education-item current">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="education-badge">Current</div>
+                        </div>
+                        <div class="education-content">
+                            <h3>Master's Degree in Artificial Intelligence</h3>
+                            <p class="institution">Johannes Kepler Universität Linz</p>
+                            <p class="duration">February 2025 - September 2027</p>
+                            <div class="education-details">
+                                <span class="detail-tag">AI/ML</span>
+                                <span class="detail-tag">Research</span>
+                                <span class="detail-tag">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="education-badge completed">Completed</div>
+                        </div>
+                        <div class="education-content">
+                            <h3>BSc(Hons) Computer Science</h3>
+                            <p class="institution">University of Hertfordshire</p>
+                            <p class="duration">September 2021 - May 2022</p>
+                            <div class="education-details">
+                                <span class="detail-tag">Programming</span>
+                                <span class="detail-tag">Software Engineering</span>
+                                <span class="detail-tag">Bachelor's</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="education-badge completed">Completed</div>
+                        </div>
+                        <div class="education-content">
+                            <h3>Higher National Diploma, Computer Science</h3>
+                            <p class="institution">Uxbridge College</p>
+                            <p class="duration">2019 - 2021</p>
+                            <div class="education-details">
+                                <span class="detail-tag">HND</span>
+                                <span class="detail-tag">Computer Science</span>
+                                <span class="detail-tag">Foundation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="education-badge completed">Completed</div>
+                        </div>
+                        <div class="education-content">
+                            <h3>High School, Science</h3>
+                            <p class="institution">Glacier School</p>
+                            <p class="duration">June 2017 - April 2019</p>
+                            <div class="education-details">
+                                <span class="detail-tag">Science</span>
+                                <span class="detail-tag">High School</span>
+                                <span class="detail-tag">Foundation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <div class="skills-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Computing</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cube"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>DevOps</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-rocket"></i>
+                        <span>Terraform</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Programming & Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>Databases</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-tasks"></i>
+                        <span>Jira</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-book"></i>
+                        <span>Confluence</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-file-word"></i>
+                        <span>Microsoft Office</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Troubleshooting</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Communication</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-users"></i>
+                        <span>Team Management</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Time Management</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Critical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>AWS Certified Solutions Architect – Associate</h3>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>AWS Academy Graduate - AWS Academy Cloud Architecting</h3>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>AWS Cloud Quest: Cloud Practitioner</h3>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>JavaScript Essentials 1</h3>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Jira Fundamentals Badge</h3>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Learn About Agile Project Management and Scrum</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Linz, Austria</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+43 678 7920595</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>nikesh.bhattarai47@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/nikeshbhattarai47</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nikesh Bhattarai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
