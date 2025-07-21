@@ -1064,3 +1064,27 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.flag-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 1.8em;
+  height: 1.3em;
+  margin: 0 0.2em;
+  overflow: hidden;
+  perspective: 500px;
+}
+
+.flag-icon {
+  /* Transform for 3D tilt */
+  transform: rotateX(15deg) rotateY(-10deg) rotateZ(5deg);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flag-span:hover .flag-icon {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
